@@ -1,0 +1,14 @@
+pipeline{
+    agent
+    environment{
+    }
+    stages{
+        stage("stage1 - staging"){
+            steps{
+                script{
+                    sh date
+                }
+            }
+        }
+    }
+}
